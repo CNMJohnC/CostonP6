@@ -37,6 +37,9 @@ def getLocation():
 def calculateDistance(origin,destination):
     radius = 6371000  # radius of Earth in meters
     #subtract the latitude and longitude and convert to radians
+    '''
+    Haversine formula located here: https://community.esri.com/t5/coordinate-reference-systems-blog/distance-on-a-sphere-the-haversine-formula/ba-p/902128
+    '''
     lat1, lon1 = origin
     lat2, lon2 = destination
     #Convert to radians for equation to work.
